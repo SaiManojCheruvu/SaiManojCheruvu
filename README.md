@@ -9,8 +9,6 @@
   <a href="mailto:saimanojcheruvu@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
----
-
 ## 🧑‍💻 About Me
 
 Software Engineer with **5+ years** of experience building scalable full-stack applications — currently based in Boston, MA.
@@ -22,21 +20,17 @@ I care about building systems that are correct under pressure: concurrent writes
 - 📡 **Real-time systems**: WebSocket pub/sub, collaborative tooling, event-driven architecture
 - ☁️ **AWS Certified Cloud Practitioner** (CLF-002)
 
----
-
 ## 🗂️ Public Repos
 
 ### 🔒 [Pet-Store](https://github.com/SaiManojCheruvu/Pet-store) — Concurrent Purchase Safety
 > Full-stack pet marketplace (Go + React/TypeScript + GraphQL + PostgreSQL) demonstrating safe handling of concurrent data updates
 
-**The core challenge:** Multiple buyers trying to purchase the same pet simultaneously. Solved at two levels:
+The core challenge: multiple buyers trying to purchase the same pet simultaneously. Solved at two levels:
 
-- **Code-level locking** — `sync.Mutex` on the service layer (`PetService`, `SinglePurchaseStrategy`, `BatchPurchaseStrategy`) and `sync.RWMutex` on the repository layer, preventing goroutine races on purchase state
-- **DB-level locking** — PostgreSQL `SELECT FOR UPDATE` reservation pattern: atomically checks availability and marks purchased in a single transaction, so no two requests can double-sell the same record
-- **Strategy pattern** — `PurchaseStrategy` interface with separate `SinglePurchaseStrategy` and `BatchPurchaseStrategy` implementations; `PurchaseService` hot-swaps strategies safely using `sync.RWMutex`
-- **Stack**: Go (net/http, sync), PostgreSQL, GraphQL, React/TypeScript, Docker Compose
-
----
+- **Code-level locking** — mutex locks on the service layer and read-write locks on the repository layer, preventing goroutine races on purchase state
+- **DB-level locking** — PostgreSQL reservation pattern that atomically checks availability and marks a record as purchased in a single transaction, so no two requests can double-sell the same item
+- **Strategy pattern** — a PurchaseStrategy interface with separate Single and Batch purchase implementations, hot-swapped safely at runtime
+- **Stack**: Go, PostgreSQL, GraphQL, React/TypeScript, Docker Compose
 
 ### 📡 [High-Level-Design](https://github.com/SaiManojCheruvu/High-Level-Design) — System Design Implementations
 > Practical implementations of system design concepts from [Hello Interview](https://www.hellointerview.com/learn/system-design) — theory turned into running code
@@ -47,27 +41,20 @@ I care about building systems that are correct under pressure: concurrent writes
 - 📝 [Medium: Real-time Data Patterns](https://medium.com/@saimanojcheruvu/real-time-data-patterns-c2502ee410ba)
 - **Stack**: JavaScript, Java, CSS, Docker
 
----
-
 ### 🍰 [CakeStoreApp](https://github.com/SaiManojCheruvu/CakeStoreApp) — Full-Stack TypeScript App
 > End-to-end store application with a clean frontend/backend project structure
-- **Stack**: TypeScript (72%), CSS, JavaScript
-
----
+- **Stack**: TypeScript, CSS, JavaScript
 
 ### 📐 [Object-Oriented-Designs](https://github.com/SaiManojCheruvu/Object-Oriented-Designs) — Design Patterns in Java
 > OOP coursework covering 17 design patterns with JUnit testing and lambda expression refactoring
 
 Patterns covered include Singleton, State, Multicast, Composite, Proxy, Visitor, Command, and Strategy (with Comparators), plus their lambda-expression equivalents.
 
-- **Stack**: Java (100%)
-
----
+- **Stack**: Java
 
 ### 📈 [StockPricePredictionUsingTimeSeries](https://github.com/SaiManojCheruvu/StockPricePredictionUsingTimeSeries)
-> Time series analysis and stock price forecasting — **Stack**: R
-
----
+> Time series analysis and stock price forecasting
+- **Stack**: R
 
 ## 🛠️ Tech Stack
 
@@ -112,10 +99,8 @@ Patterns covered include Singleton, State, Multicast, Composite, Proxy, Visitor,
 ![GitLab CI](https://img.shields.io/badge/GitLab_CI%2FCD-FC6D26?style=flat-square&logo=gitlab&logoColor=white)
 ![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
 
----
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=saimanojcheruvu&style=flat-square&color=58A6FF" />
 </p>
 
-<p align="center"><i>"Build i
+<p align="center"><i>"Build it right, build it safe, ship it clean."</i></p>
