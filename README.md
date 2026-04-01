@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://linkedin.com/in/sai-manoj-cheruvu"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/saimanojcheruvu/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://leetcode.com/u/Manoj-Cheruvu-02070979/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" /></a>
   <a href="https://medium.com/@saimanojcheruvu"><img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" /></a>
   <a href="mailto:saimanojcheruvu@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
@@ -114,31 +114,8 @@ Patterns covered include Singleton, State, Multicast, Composite, Proxy, Visitor,
 
 ---
 
-## 📈 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=saimanojcheruvu&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="160" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=saimanojcheruvu&layout=compact&theme=github_dark&hide_border=true" height="160" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=saimanojcheruvu&theme=github-dark-blue&hide_border=true" />
-</p>
-
----
-
-## 🏆 Trophies
-
-<p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=saimanojcheruvu&theme=gitdimmed&no-frame=true&column=7" />
-  </a>
-</p>
-
----
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=saimanojcheruvu&style=flat-square&color=58A6FF" />
 </p>
 
-<p align="center"><i>"Build it right, build it safe, ship it clean."</i></p>
+<p align="center"><i>"Build i
